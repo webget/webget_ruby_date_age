@@ -1,0 +1,125 @@
+
+<html><head>
+  <title>Class: DateAgeTest</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function popCode(url) {
+    parent.frames.source.location = url
+  }
+  //-->
+  </script>
+</head>
+<body bgcolor="white">
+
+
+<table width="100%" border="0" cellspacing="0">
+ <tr class="title-row">
+ <td class="big-title-font">
+   <font size="-3"><b>Class</b><br /></font>DateAgeTest
+ </td>
+ <td align="right">
+   <table cellspacing="0" cellpadding="2">
+     <tr valign="top">
+      <td class="small-title-font">In:</td>
+      <td class="small-title-font">
+<a href="../files/test/unit/date_age_test_rb.html">test/unit/date_age_test.rb</a>
+      </td>
+     </tr>
+     <tr>
+      <td class="small-title-font">Parent:</td>
+      <td class="small-title-font">
+Test::Unit::TestCase
+      </td>
+     </tr>
+   </table>
+  </td>
+  </tr>
+</table><br />
+  <!-- banner header -->
+
+
+
+
+
+<div class="indent">
+<div class="methods">
+<table class="tablemethods" cellpadding="5" width="100%">
+<tr><td class="tablesubtitle">Methods</td></tr>
+</table>
+<div class="name-list">
+<ul>
+<li><a href="#M000004">test_age__in_days</a>
+<li><a href="#M000003">test_age_in_years</a>
+</ul>
+</div>
+</div>
+</div>
+
+
+    <div class="indent">
+    <div id="section">
+
+
+
+  
+
+<!--IF:method_list-->
+<div class="method_list">
+<!--START:method_list-->
+<!--IF:methods -->
+<h2>Public Instance methods</h2>
+<div class="methods">
+<!--START:methods-->
+<h2 class="methodname"><a name="M000004">
+
+ <b>test_age__in_days</b>()
+</a>
+</h2>
+
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/date_age_test.rb, line 17</span>
+17:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_age__in_days</span>
+18:    <span class="ruby-identifier">assert_equal</span>( <span class="ruby-value">9967</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_days</span>(<span class="ruby-constant">VALENTINES</span>),     <span class="ruby-value str">'&lt; birthday'</span>)
+19:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">10227</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_days</span>(<span class="ruby-constant">HALLOWEEN</span>),      <span class="ruby-value str">'= birthday'</span>)
+20:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">10288</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_days</span>(<span class="ruby-constant">NEW_YEARS_EVE</span>),  <span class="ruby-value str">'&gt; birthday'</span>)
+21:  <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000003">
+
+ <b>test_age_in_years</b>()
+</a>
+</h2>
+
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/date_age_test.rb, line 11</span>
+11:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_age_in_years</span>
+12:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">27</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_years</span>(<span class="ruby-constant">VALENTINES</span>),    <span class="ruby-value str">'&lt; birthday'</span>)
+13:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">28</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_years</span>(<span class="ruby-constant">HALLOWEEN</span>),     <span class="ruby-value str">'= birthday'</span>)
+14:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">28</span>,<span class="ruby-constant">BIRTHDATE</span>.<span class="ruby-identifier">age_years</span>(<span class="ruby-constant">NEW_YEARS_EVE</span>), <span class="ruby-value str">'&gt; birthday'</span>)
+15:  <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+</div><!--methods-->
+<!--ENDIF:methods-->
+</div><!-- END method_list -->
+</div><!-- ENDIF method_list -->
+  <!-- method descriptions -->
+
+
+</div><!-- indent -->
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+<html><head>
+  <title>Class: Date</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function popCode(url) {
+    parent.frames.source.location = url
+  }
+  //-->
+  </script>
+</head>
+<body bgcolor="white">
+
+
+<table width="100%" border="0" cellspacing="0">
+ <tr class="title-row">
+ <td class="big-title-font">
+   <font size="-3"><b>Class</b><br /></font>Date
+ </td>
+ <td align="right">
+   <table cellspacing="0" cellpadding="2">
+     <tr valign="top">
+      <td class="small-title-font">In:</td>
+      <td class="small-title-font">
+<a href="../files/lib/date_age_rb.html">lib/date_age.rb</a>
+      </td>
+     </tr>
+     <tr>
+      <td class="small-title-font">Parent:</td>
+      <td class="small-title-font">
+Object
+      </td>
+     </tr>
+   </table>
+  </td>
+  </tr>
+</table><br />
+  <!-- banner header -->
+
+
+
+
+
+<div class="indent">
+<div class="methods">
+<table class="tablemethods" cellpadding="5" width="100%">
+<tr><td class="tablesubtitle">Methods</td></tr>
+</table>
+<div class="name-list">
+<ul>
+<li><a href="#M000002">age_days</a>
+<li><a href="#M000001">age_years</a>
+</ul>
+</div>
+</div>
+</div>
+
+
+    <div class="indent">
+    <div id="section">
+
+
+
+  
+
+<!--IF:method_list-->
+<div class="method_list">
+<!--START:method_list-->
+<!--IF:methods -->
+<h2>Public Instance methods</h2>
+<div class="methods">
+<!--START:methods-->
+<h2 class="methodname"><a name="M000002">
+
+ <b>age_days</b>(compare_to_date=Date.today)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return the age in days for a given date.
+</p>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File lib/date_age.rb, line 45</span>
+45:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">age_days</span>(<span class="ruby-identifier">compare_to_date</span>=<span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>)
+46:   (<span class="ruby-identifier">compare_to_date</span><span class="ruby-operator">-</span><span class="ruby-keyword kw">self</span>).<span class="ruby-identifier">to_i</span>
+47:  <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000001">
+
+ <b>age_years</b>(compare_date=Date.today)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return the age in years for a given date.
+</p>
+<h2>Example</h2>
+<pre>
+  birthdate=Date.new(1980,10,31)
+  birthdate.age_years =&gt; 28 (where 28 is the correct age for today)
+</pre>
+<h2>Example of custom dates</h2>
+<pre>
+  birthdate=Date.new(1980,10,31)
+
+  valentines = Date.new(2008,02,14)
+  birthdate.age_years(valentines) =&gt; 27  # before the birthday
+
+  halloween = Date.new(2008,10,31)
+  birthdate.age_years(halloween) =&gt; 28   # on the birthday
+
+  new_years_eve = Date.new(2008,12,31)
+  birthdate.age_years(new_years_eve) =&gt; 28  # after the birthday
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File lib/date_age.rb, line 36</span>
+36:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">age_years</span>(<span class="ruby-identifier">compare_date</span>=<span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>)
+37:   <span class="ruby-identifier">age</span>=<span class="ruby-identifier">compare_date</span>.<span class="ruby-identifier">year</span><span class="ruby-operator">-</span><span class="ruby-identifier">year</span>
+38:   <span class="ruby-identifier">age</span><span class="ruby-operator">-=</span><span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">compare_date</span>.<span class="ruby-identifier">month</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">month</span> <span class="ruby-keyword kw">or</span> (<span class="ruby-identifier">compare_date</span>.<span class="ruby-identifier">month</span><span class="ruby-operator">==</span><span class="ruby-identifier">month</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">compare_date</span>.<span class="ruby-identifier">day</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">day</span>)
+39:   <span class="ruby-identifier">age</span>
+40:  <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+</div><!--methods-->
+<!--ENDIF:methods-->
+</div><!-- END method_list -->
+</div><!-- ENDIF method_list -->
+  <!-- method descriptions -->
+
+
+</div><!-- indent -->
+</body>
+</html>
